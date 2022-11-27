@@ -1,0 +1,38 @@
+{
+    "title": "TimeLine Map",
+    "years": [
+        {
+            "year": "2015"
+        }
+    ],
+    "data": [
+        {
+            "place": "Barcelona & Tenerife",
+            "date": "15",
+            "month": "May",
+            "year": "2015",
+            "thisYearTripCount": 1
+        },
+        {
+            "place": "Malta, a Country of knights",
+            "date": "15",
+            "month": "June",
+            "year": "2015",
+            "thisYearTripCount": 2
+        },
+        {
+            "place": "India, Mumbai Churchgate",
+            "date": "15",
+            "month": "September",
+            "year": "2015",
+            "thisYearTripCount": 3
+        },
+        {
+            "place": "United States East Coast Tour",
+            "date": "15",
+            "month": "February",
+            "year": "2018",
+            "thisYearTripCount": 3
+        }
+    ]
+}
