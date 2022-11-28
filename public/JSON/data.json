@@ -1,10 +1,5 @@
 {
     "title": "TimeLine Map",
-    "years": [
-        {
-            "year": "2015"
-        }
-    ],
     "data": [
         {
             "place": "Barcelona & Tenerife",
@@ -32,7 +27,7 @@
             "date": "15",
             "month": "February",
             "year": "2018",
-            "thisYearTripCount": 3
+            "thisYearTripCount": 1
         }
     ]
 }

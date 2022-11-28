@@ -13,14 +13,16 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.timeLineChart:last-child .yearLoop{
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom: 1px solid;
+}
+.timeLineChart:first-child .yearLoop{
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top:1px solid;
 }
