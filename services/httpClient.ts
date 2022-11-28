@@ -4,7 +4,6 @@ import ky from "ky";
 
 import getTimelineData from "./timeline/getTimelineData";
 
-const RootUrl = "http://localhost:3000/JSON/";
 type ApiHandler<T, U> = (baseHttpClient: typeof ky, params: U) => Promise<T>;
 
 type MyHTTPOptions = {
@@ -16,7 +15,6 @@ type AdditionalHeaderOptions = {
   key: string;
   value: string;
 };
-console.log(RootUrl, "RootUrl");
 export class MyHTTP {
   public timeline;
 
@@ -25,7 +23,7 @@ export class MyHTTP {
     res: NextApiResponse,
     opts: MyHTTPOptions = { authRequired: true, additionalHeader: [] }
   ) {
-    const baseUrl = RootUrl;
+    const baseUrl = "http://localhost:3000/JSON/";
     const baseHttpClient = ky.create({
       prefixUrl: baseUrl,
       retry: 0,

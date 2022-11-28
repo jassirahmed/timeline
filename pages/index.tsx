@@ -1,6 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
 import { JsonData } from "../services/types";
 import ky from "ky";
@@ -8,7 +5,6 @@ import { Box, Flex, Button } from "@chakra-ui/react";
 
 export default function Home() {
   const [data, setData] = useState<JsonData>();
-  const [height, setHeight] = useState("100px");
   useEffect(() => {
     getData();
   }, []);
