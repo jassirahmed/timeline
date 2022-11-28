@@ -7,6 +7,7 @@ export type JsonData = {
   title: string;
   data: [
     {
+      id: number;
       date: string;
       month: string;
       place: string;

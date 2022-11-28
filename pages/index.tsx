@@ -16,7 +16,6 @@ export default function Home() {
     const response = await ky.get("/api/timeLineData").json<JsonData>();
     setData(response);
   };
-  const dataLenght = console.log(data, "data");
   return (
     <Box w="100%" h="100%">
       {data?.data.map((jsonData, i) => (
@@ -25,8 +24,8 @@ export default function Home() {
           h="250px"
           borderRadius="8px"
           pos="relative"
-          px="30px"
-          key={i}
+          px={{ base: "10px", md: "30px" }}
+          key={jsonData.id}
           className="timeLineChart"
         >
           <Box
@@ -129,7 +128,7 @@ export default function Home() {
                 </Button>
               </Flex>
               <Box fontSize={{ base: "xs", md: "sm" }} pt="10px">
-                May 15, 2015
+                {jsonData.month} {jsonData.date}, {jsonData.year}
               </Box>
             </Box>
           </Box>
@@ -152,7 +151,7 @@ export default function Home() {
               mr="15px"
               display={jsonData.thisYearTripCount > 1 ? "block" : "none"}
             >
-              May 15, 2015
+              {jsonData.month} {jsonData.date}, {jsonData.year}
             </Box>
             <Box
               w="20px"
